@@ -8,10 +8,6 @@ min_version = "0.2"
 hyde_sticky = true
 hyde_reverse = false
 hyde_theme = ""
-hyde_links = [
-    {url = "https://google.com", name = "Google.com"},
-    {url = "https://google.fr", name = "Google.fr"},
-]
 
 [author]
 name = "Vincent Prouillet"
