@@ -10,13 +10,13 @@
         <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="{{ get_url(path="print.css") }}" media="print">
-        <link rel="stylesheet" href="{{ get_url(path="poole.css") }}">
-        <link rel="stylesheet" href="{{ get_url(path="lanyon.css") }}">
-        <link rel="stylesheet" href="{{ get_url(path="app.css") }}">
+        <link rel="stylesheet" href="{{ config.base_url }}/print.css" media="print">
+        <link rel="stylesheet" href="{{ config.base_url }}/poole.css">
+        <link rel="stylesheet" href="{{ config.base_url }}/lanyon.css">
+        <link rel="stylesheet" href="{{ config.base_url }}/app.css">
 
         {% if config.generate_rss %}
-        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") }}">
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ config.base_url }}/rss.css">
         {% endif %}
 
         {% block extra_head %}
